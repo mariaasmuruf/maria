@@ -43,6 +43,7 @@ class MainActivity : AppCompatActivity() {
             "wisata_mangrove",
             "wisata_kampung_yoboi",
             "skow",
+            "skow",
             "wisata_jembatan_merah"
         )
 
@@ -58,7 +59,6 @@ class MainActivity : AppCompatActivity() {
             "perbatasan_png",
             "kota_jayapura"
         )
-
 
         deskripsi = arrayOf(
             getString(R.string.pantai_base_g),
@@ -90,7 +90,7 @@ class MainActivity : AppCompatActivity() {
         }
 
 
-    var adapter = MyAdapter(listWisata)
+    val adapter = MyAdapter(listWisata)
         wisataRecyclerView.adapter = adapter
         adapter.set0nItemClickckListener(object:MyAdapter.onItemClickLickListener{
 
@@ -107,26 +107,4 @@ class MainActivity : AppCompatActivity() {
         })
     }
 
-
-
-//        wisataRecyclerView = findViewById(R.id.wisataRV)
-//        listWisata = ArrayList()
-//
-//        listWisata.add(ItemData(R.drawable.pantai_base_g,"Pantai_Base_g","Kota_jayapura_papua"))
-//        listWisata.add(ItemData(R.drawable.bukit_jokowi, "Bukit_jokowi","skaylen"))
-//        listWisata.add(ItemData(R.drawable.jayapura_city,"Jayapura_city","Kota_jayapura"))
-//        listWisata.add(ItemData(R.drawable.bukit_teletabis,"Bukit_teletabis","Kab_jayapura"))
-//        listWisata.add(ItemData(R.drawable.wisata_kampung_yoboi,"Wisata_kampung_yoboi","Kab_Jayapura"))
-//        listWisata.add(ItemData(R.drawable.pantai_hamadi,"Pantai_hamadi","Kota_jayapura"))
-//        listWisata.add(ItemData(R.drawable.wisata_mangrove,"Wisata_mangrove,","Kota_jayapura"))
-//        listWisata.add(ItemData(R.drawable.wisata_jembatan_merah,"Wisata_jembatan_merah","Kota_jayapura"))
-//        listWisata.add(ItemData(R.drawable.kali_biru,"Kali_biru","Kota_jayapura"))
-//        listWisata.add(ItemData(R.drawable.skow,"Skow,","Perbatasan_png"))
-//
-//
-//        wisataRecyclerView.layoutManager=LinearLayoutManager(this)
-//        wisataRecyclerView.setHasFixedSize(true)
-//        wisataAdapter = MyAdapter(listWisata)
-//        wisataRecyclerView.adapter = wisataAdapter
-
-    }
+}

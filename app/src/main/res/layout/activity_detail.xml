@@ -31,7 +31,9 @@
             android:paddingStart="10dp"
             android:paddingEnd="10dp"
             android:textSize="24sp"
-            android:text="Nama wisata " />
+            android:textColor="#000C36"
+            android:text="Nama wisata "
+            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/tv_lokasi"
@@ -40,7 +42,9 @@
             android:paddingStart="10dp"
             android:paddingEnd="10dp"
             android:textSize="18sp"
-            android:text="Lokasi wisata " />
+            android:textColor="#000C36"
+            android:text="Lokasi wisata "
+            android:textStyle="italic"/>
 
         <ScrollView
             android:layout_width="match_parent"
