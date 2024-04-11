@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_1"
+    android:orientation="vertical"
+    android:padding="16sp"
+    tools:context=".RegisterActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textColor="#455BAE"
+        android:textSize="45dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp" />
+
+    <!--  textview nama  -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="20dp"
+        android:textSize="18sp"
+        android:textColor="#2451FE"
+        android:text="Nama"/>
+
+    <!--  edittext nama  -->
+    <EditText
+        android:id="@+id/edtRegisterUsername"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/bg_edit_white"
+        android:hint="Masukkan nama"
+        android:inputType="textPersonName"
+        android:paddingStart="20dp"
+        android:textColorHint="#D9D9D9" />
+
+    <!--  textview E-Mail  -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:textSize="18sp"
+        android:textColor="#2451FE"
+        android:text="E-Mail"/>
+
+    <!--  edittext E-Mail  -->
+    <EditText
+        android:id="@+id/edttRegisterEmail"
+        android:layout_width="match_parent"
+        android:layout_marginTop="0dp"
+        android:layout_height="50dp"
+        android:paddingStart="20dp"
+        android:background="@drawable/bg_edit_white"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#D9D9D9"
+        android:hint="Masukkan email" />
+
+    <!--  textview Password  -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:textSize="18sp"
+        android:textColor="#2451FE"
+        android:text="Password"/>
+
+    <!--  edittext Password  -->
+    <EditText
+        android:id="@+id/edtRegisterPass"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="0dp"
+        android:paddingStart="20dp"
+        android:background="@drawable/bg_edit_white"
+        android:inputType="textPassword"
+        android:textColorHint="#D9D9D9"
+        android:hint="Masukkan password"/>
+
+    <!--  Tombol Register  -->
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/btn_corner"
+        android:text="Register"
+        android:textSize="16sp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/texView2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:paddingEnd="5dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="Sudah punya akun?"
+            android:textSize="20dp"/>
+
+        <!--  textview Login untuk pindah ke halaman LOGIN  -->
+        <TextView
+            android:id="@+id/linkKeLogin"
+            android:layout_width="24dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_weight="1"
+            android:text="Login"
+            android:textSize="20dp"
+            android:textColor="#49DAF7"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</LinearLayout>
