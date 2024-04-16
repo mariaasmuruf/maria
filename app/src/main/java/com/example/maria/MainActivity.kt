@@ -3,6 +3,7 @@ package com.example.maria
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
@@ -19,8 +20,23 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_home)
+        setContentView(R.layout.activity_main)
 
+        // Menjalankan kode untuk berpindah activity ketika sebuah button ditekan
+        val btn_profile = findViewById<Button>(R.id.btnProfile)
+        btn_profile.setOnClickListener {
+            val intent = Intent(this, ProfileActivity::class.java)
+            startActivity(intent)
+        }
+
+        // Menjalankan kode untuk berpindah activity ketika sebuah button ditekan
+        val btn_logout = findViewById<Button>(R.id.btnLogout)
+        btn_logout.setOnClickListener {
+            finishAffinity()
+        }
+
+
+        // Menampilkan Recyclerview
         gambar = arrayOf(
             R.drawable.bukit_jokowi,
             R.drawable.bukit_teletabis,
@@ -70,7 +86,7 @@ class MainActivity : AppCompatActivity() {
             getString(R.string.wisata_jembatan_merah),
             getString(R.string.bukit_teletabis),
             getString(R.string.bukit_jokowi),
-            getString(R.string.jayapura_city),
+            getString(R.string.jayapura_city)
 
             )
 
@@ -106,5 +122,6 @@ class MainActivity : AppCompatActivity() {
 
         })
     }
+
 
 }
